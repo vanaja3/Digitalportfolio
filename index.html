@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>your name - portfolio</title>
+        <style>
+            body{
+                font-family: arial, sans-sarif;
+                margin:0;
+                padding:0;
+                background-color: violet;
+            }
+
+            header{
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 2rem 0;
+                position: relation;
+            }
+
+            .header-content h1{
+                font-size: 2.5rem;
+            }
+
+            .profile-picture{
+                width: 100px;
+                height: 100px;
+                border-radius: 75%;
+                object-fit: cover;
+                position: absolute;
+                top: 75px;
+                left: 75px;
+            }
+
+            nav{
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+            }
+
+            nav ul{
+                list-style-type: none;
+                padding: 0;
+            }
+
+            nav ul li{
+                display: inline;
+                margin: 0 20px;
+
+            }
+
+            nav ul li a{
+                text-decoration: none;
+                color: #fff;
+            }
+
+            .section-content{
+                background-color: pink;
+                padding: 2rem;
+                margin: 1rem;
+                border-radius: 20px;
+                box-shadow: 0 0 10px rgba(0 , 0, 0, 0.1);
+
+            }
+             </style>
+        
+    </head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>VANAJA.P</h1>
+            <p>passionate of student</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <yli><a href="#skills">skills</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>Hello sir/Madam ,I'm vanaja pandi </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Bsc</h2>
+            <p>Government arts and science college for women</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>javascript</li>
+                <li>css</li>
+                <li>Html</li>
+            </ul>
+        </div>
+  </section> 
+  <section id="projects">
+    <div class="section-content">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="#">Project 1</a></li>
+            <Li><a href="#">Project 2</a></Li>
+        </ul>
+    </div>
+  </section>
+
+  <section id="resume">
+    <center>
+        <div class="section-content">
+            <h2>Resume</h2>
+            <a href="https://dosc.googe.com/document/d/1dxjsvpkepzepfpt3zjjrn2nvakfe7a10/edit?usp=sha-;/ringsoid=11438"></a>
+        </div>
+    </center>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 vanaja</p>
+  </footer>
+
+  <script>
+
+    document.querySelectorAll('a[href^="#"]').foreach(anchor =>{
+        anchor.addEventListner('click',funtion(e){
+            e.preventDefault();
+
+            const targetId=this.getAttribute('href').substring(1);
+            const targetElement=document.getElementByid(targetid);
+
+            if(targetElement){
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behaviour:'smooth'
+                });
+            }
+        });
+    });
+  </script>
+</body>
+</html>
